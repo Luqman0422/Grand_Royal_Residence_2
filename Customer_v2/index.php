@@ -1,5 +1,5 @@
 <?php
-	require 'connectdb.php';
+require 'connectdb.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,7 @@
 		<header class="navbar-fixed-top" >
 			<div class="wrapper">
 				<a href="#"><img src="img/logo2.png" width="200" class="logo" alt="" title="" style="margin-left: 0px; margin-top: 15px;" /></a>
+				<a href="#" class="hamburger"></a>
 				<nav>
 					<ul>
 						<li><a href="?page=Home">Home</a></li>
@@ -40,31 +41,31 @@
 			</div>
 		</header><!--  end header section  -->
 
-			<section class="caption">
-				<h2 class="caption">Find Your Dream Home</h2>
-				<h3 class="properties">In Grand Royal Residence 2 - Indramayu</h3>
-			</section>
+		<section class="caption">
+			<h2 class="caption">Find Your Dream Home</h2>
+			<h3 class="properties">In Grand Royal Residence 2 - Indramayu</h3>
+		</section>
 	</section><!--  end hero section  -->
 
 	
 	<?php
-		switch ($_GET['page']) {
-			case 'Rumah':
-				include 'Product.php';
-				break;
-			case 'Home':
-				include 'Dashboard.php';
-				break;
-			case 'Fasilitas':
-				include 'Fasilitas.php';
-				break;
-			case 'Detail':
-				include 'Detail.php';
-				break;
-			default:
-				include 'Dashboard.php';
-				break;
-		}
+	switch ($_GET['page']) {
+		case 'Rumah':
+		include 'Product.php';
+		break;
+		case 'Home':
+		include 'Dashboard.php';
+		break;
+		case 'Fasilitas':
+		include 'Fasilitas.php';
+		break;
+		case 'Detail':
+		include 'Detail.php';
+		break;
+		default:
+		include 'Dashboard.php';
+		break;
+	}
 	?>
 
 	<footer>
