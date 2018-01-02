@@ -166,7 +166,7 @@ html,body{
 
   <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" style="background-color: brown">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top" id="sideNav" >
       <a href="index.php?page="><img src="img/logo2.png" width="200" class="logo" alt="" titl="" /></a>
       <div style="margin-top: 100px;">
       <img src="img/image.png" width="50%" height="auto">

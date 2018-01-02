@@ -34,7 +34,7 @@ require 'connectdb.php';
 							</ul>
 						</li>
 						<li><a href="?page=Fasilitas">Fasilitas</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="?page=About">About</a></li>
 					</ul>
 					<a href="indexUser.php?page=" class="login_btn">Booking</a>
 				</nav>
@@ -62,29 +62,29 @@ require 'connectdb.php';
 		case 'Detail':
 		include 'Detail.php';
 		break;
+		case 'About':
+		include 'About.php';
+		break;
 		default:
 		include 'Dashboard.php';
 		break;
 	}
 	?>
 
-	<footer>
-		<div class="wrapper footer">
-			<ul>
-				<li class="about">
-					<p>La Casa is real estate minimal html5 website template, designed and coded by pixelhint, tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum</p>
-					<ul>
-						<li><a href="http://facebook.com/pixelhint" class="facebook" target="_blank"></a></li>
-						<li><a href="http://twitter.com/pixelhint" class="twitter" target="_blank"></a></li>
-						<li><a href="http://plus.google.com/+Pixelhint" class="google" target="_blank"></a></li>
-						<li><a href="#" class="skype"></a></li>
-					</ul>
-				</li>
-			</ul>
+	<footer align="center">
+		<div class="about" >
+					<p>
+						Kantor pemasaran :
+					</p>
+					<p>
+						Komp.Ruko Grand Royal Residence 1 No. 10
+						Jl. Raya Pasar Baru (depan Kantor Polres)
+					</p>
+				
 		</div>
 
 		<div class="copyrights wrapper">
-			Copyright © 2015 <a href="http://pixelhint.com" target="_blank" class="ph_link" title="Download more free Templates">Pixelhint.com</a>. All Rights Reserved.
+			Copyright © 2015 Kelompok 4. All Rights Reserved.
 		</div>
 	</footer><!--  end footer  -->
 	
